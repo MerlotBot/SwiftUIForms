@@ -13,6 +13,7 @@
 		BB6F421122E5D91F000CD835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6F421022E5D91F000CD835 /* Assets.xcassets */; };
 		BB6F421422E5D91F000CD835 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6F421322E5D91F000CD835 /* Preview Assets.xcassets */; };
 		BB6F421722E5D91F000CD835 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6F421522E5D91F000CD835 /* LaunchScreen.storyboard */; };
+		BB7083A022E5E65D0032F304 /* NotificationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB70839F22E5E65D0032F304 /* NotificationSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BB6F421322E5D91F000CD835 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BB6F421622E5D91F000CD835 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB6F421822E5D91F000CD835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB70839F22E5E65D0032F304 /* NotificationSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				BB6F420A22E5D91C000CD835 /* AppDelegate.swift */,
 				BB6F420C22E5D91C000CD835 /* SceneDelegate.swift */,
 				BB6F420E22E5D91C000CD835 /* ContentView.swift */,
+				BB70839F22E5E65D0032F304 /* NotificationSettings.swift */,
 				BB6F421022E5D91F000CD835 /* Assets.xcassets */,
 				BB6F421522E5D91F000CD835 /* LaunchScreen.storyboard */,
 				BB6F421822E5D91F000CD835 /* Info.plist */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB6F420B22E5D91C000CD835 /* AppDelegate.swift in Sources */,
+				BB7083A022E5E65D0032F304 /* NotificationSettings.swift in Sources */,
 				BB6F420D22E5D91C000CD835 /* SceneDelegate.swift in Sources */,
 				BB6F420F22E5D91C000CD835 /* ContentView.swift in Sources */,
 			);

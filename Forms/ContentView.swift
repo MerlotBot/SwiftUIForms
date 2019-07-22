@@ -14,6 +14,13 @@ struct ContentView : View {
     @State private var colorTemperature: CGFloat = 0.5
     @State private var selectedDay = 0
     @State private var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    @State private var date = Date()
+    
+    var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        return formatter
+    }
     
     var body: some View {
         
@@ -68,6 +75,12 @@ struct ContentView : View {
                             Text(self.days[$0]).tag($0)
                         }
                     }//.pickerStyle(.wheel)
+                }
+                Section(header: Text("")) {
+                    VStack {
+                        DatePicker($date, maximumDate: Date(), displayedComponents: .date)
+                    }
+                    Text("Date is \(date, formatter: dateFormatter)")
                 }
                 
             }.navigationBarTitle(Text("Settings"))

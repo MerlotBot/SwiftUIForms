@@ -12,6 +12,8 @@ struct ContentView : View {
     @State private var scheduled: Bool =  false
     @State private var manuallyEnableUntilTomorrow: Bool = false
     @State private var colorTemperature: CGFloat = 0.5
+    @State private var selectedDay = 0
+    @State private var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     
     var body: some View {
         
@@ -58,6 +60,14 @@ struct ContentView : View {
                         }
                         Slider(value: $colorTemperature, from: 0.0, through: 1.0, by: 0.1)
                     }
+                }
+                
+                Section(header: Text("")) {
+                    Picker(selection: $selectedDay, label: Text("Pick a day")) {
+                        ForEach(0..<days.count) {
+                            Text(self.days[$0]).tag($0)
+                        }
+                    }//.pickerStyle(.wheel)
                 }
                 
             }.navigationBarTitle(Text("Settings"))
